@@ -3,7 +3,7 @@
  */
 // Zach, here I describe bathrooms by indicating male or female designation, # of toilets and verify their cleanliness.
 public class Bathroom {
-    public String maleorfemale;
+    public boolean isMale;
     public int toilets;
-    public boolean isClean = true;
+    public boolean isClean;
 }
