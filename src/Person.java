@@ -31,6 +31,7 @@ public class Person {
         return name;
     }
 
+//method inside method
     public void setName(String newName){
         if (isValidName(newName)) {
             name = newName;
