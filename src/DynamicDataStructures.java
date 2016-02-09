@@ -6,9 +6,9 @@ import java.util.HashMap;
  */
 public class DynamicDataStructures {
     public static void main(String[] args) {
-        Person alice = new Person("Alice booiuhkj", 25);
-        Person bob = new Person("Bob", 30);
-        Person charlie = new Person("Charlie", 40);
+        Person alice = new Person("Alice Smith", 25);
+        Person bob = new Person("Bob Smith", 30);
+        Person charlie = new Person("Charlie Smith", 40);
 // <Person> tells java to only accept Person objects in this array list
         ArrayList <Person> people = new ArrayList<>();
         people.add(alice);
