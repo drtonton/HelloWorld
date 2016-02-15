@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 
 /**
@@ -13,6 +14,8 @@ public class Exercise02 {
         allEmails.add(new Email("alice@gmail.com", "Hi", "What's up"));
         allEmails.add(new Email("bob@gmail.com", "Hi", "What's up"));
 
+        Collections.sort(allEmails);
+
         HashMap<String, ArrayList<Email>> emailsByDest = new HashMap<>();
         for (Email email : allEmails) {
             if (!emailsByDest.containsKey(emailsByDest)) {
@@ -20,7 +23,5 @@ public class Exercise02 {
             }
             emailsByDest.get(email.destination).add(email);
         }
-
-        System.out.println();
     }
 }

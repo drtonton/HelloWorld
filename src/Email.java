@@ -1,7 +1,7 @@
 /**
  * Created by noellemachin on 2/15/16.
  */
-public class Email {
+public class Email implements Comparable {
     String destination;
     String subject;
     String body;
@@ -10,5 +10,20 @@ public class Email {
         this.destination = destination;
         this.subject = subject;
         this.body = body;
+    }
+    @Override
+    public int compareTo(Object o) {
+        Email e = (Email) o;
+        return destination.compareTo(e.destination);
+
+    }
+
+    @Override
+    public String toString() {
+        return "Email{" +
+                "destination='" + destination + '\'' +
+                ", subject='" + subject + '\'' +
+                ", body='" + body + '\'' +
+                '}';
     }
 }
